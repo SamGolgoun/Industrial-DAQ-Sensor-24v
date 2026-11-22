@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # STM32G4 CAN-FD Sensor Node
 
 > **Status:** Work in Progress (WIP) — KiCad schematic design is actively under development and ERC verification.
@@ -17,3 +18,7 @@
 - [x] Directional global labels and `ERC` fixes for `VREF+` and `VDDA` analog supply
 - [ ] Sensor interfaces and remaining MCU pin assignments
 - [ ] Clean final `ERC` pass and `PCB` layout
+=======
+# stm32g4-canfd-sensor-node
+Embedded sensor node hardware design in KiCad using STM32G431CBUx (UFQFPN48) and TCAN332 CAN-FD transceiver
+>>>>>>> origin/main
