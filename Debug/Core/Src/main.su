@@ -1,0 +1,8 @@
+../Core/Src/main.c:94:14:TMP101_ReadCelsius	40	static
+../Core/Src/main.c:127:26:LIS3DH_ReadWhoAmI	32	static
+../Core/Src/main.c:152:26:LIS3DH_WriteReg	24	static
+../Core/Src/main.c:166:26:LIS3DH_InitAccel	24	static
+../Core/Src/main.c:179:26:LIS3DH_ReadAccelXYZ	40	static
+../Core/Src/main.c:221:5:main	8	static
+../Core/Src/main.c:274:6:SystemClock_Config	88	static
+../Core/Src/main.c:318:6:Error_Handler	4	static,ignoring_inline_asm

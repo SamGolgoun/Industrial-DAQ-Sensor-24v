@@ -1,0 +1,8 @@
+../Core/Src/main.c:94:14:TMP101_ReadCelsius	6
+../Core/Src/main.c:127:26:LIS3DH_ReadWhoAmI	3
+../Core/Src/main.c:152:26:LIS3DH_WriteReg	1
+../Core/Src/main.c:166:26:LIS3DH_InitAccel	2
+../Core/Src/main.c:179:26:LIS3DH_ReadAccelXYZ	3
+../Core/Src/main.c:221:5:main	1
+../Core/Src/main.c:274:6:SystemClock_Config	3
+../Core/Src/main.c:318:6:Error_Handler	1
