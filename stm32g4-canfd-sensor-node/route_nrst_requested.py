@@ -81,7 +81,7 @@ def parse_footprints(text):
         fx = float(at_match.group(1)) if at_match else 0.0
         fy = float(at_match.group(2)) if at_match else 0.0
         angle = float(at_match.group(3)) if at_match and at_match.group(3) else 0.0
-        rotation = math.radians(angle)
+        rotation = -math.radians(angle)
         cos_angle = math.cos(rotation)
         sin_angle = math.sin(rotation)
 
@@ -249,8 +249,6 @@ def astar(start, goal, footprints, ignored_pads):
     ignored_refs = {ref for ref, _pin in ignored_pads}
     for footprint in footprints:
         ref = footprint["ref"]
-        if ref in ignored_refs:
-            continue
         for pin, pad_points in footprint["pads"].items():
             if (ref, pin) in ignored_pads:
                 continue
@@ -265,6 +263,8 @@ def astar(start, goal, footprints, ignored_pads):
                         if math.hypot(point[0] - px, point[1] - py) <= margin:
                             blocked_cells.add(point)
         for courtyard in footprint["courtyards"]:
+            if ref in ignored_refs:
+                continue
             if courtyard[0] == "rect":
                 _, x1, y1, x2, y2 = courtyard
             else:
@@ -365,7 +365,7 @@ def main():
 
     if re.search(r'\(net\s+"/?NRST"\)', text) is None:
         raise SystemExit("RULE_ERROR: /NRST net name not found. PCB untouched.")
-    net_id = "/NRST"
+    net_id = "NRST"
 
     footprints = parse_footprints(text)
     footprint_map = {footprint["ref"]: footprint for footprint in footprints}
