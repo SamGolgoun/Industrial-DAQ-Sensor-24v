@@ -15310,7 +15310,169 @@
 	)
 	(embedded_fonts no)
 
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
   (segment (start 150.5625 91.2500) (end 149.0625 91.2500) (width 0.15) (layer "F.Cu") (net "/NRST"))
   (segment (start 149.0625 91.2500) (end 148.3554 91.9571) (width 0.15) (layer "F.Cu") (net "/NRST"))
   (segment (start 149.0625 91.2500) (end 148.3554 90.5429) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 148.3554 91.9571) (end 148.2500 91.7500) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 148.2500 91.7500) (end 148.2500 90.7500) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 148.2500 90.7500) (end 148.0000 90.5000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 148.0000 90.5000) (end 127.5000 90.5000) (width 0.30) (layer "F.Cu") (net "/NRST"))
+  (segment (start 127.5000 90.5000) (end 126.0000 89.0000) (width 0.30) (layer "F.Cu") (net "/NRST"))
+  (segment (start 126.0000 89.0000) (end 121.2500 89.0000) (width 0.30) (layer "F.Cu") (net "/NRST"))
+  (segment (start 121.2500 89.0000) (end 119.2500 87.0000) (width 0.30) (layer "F.Cu") (net "/NRST"))
+  (segment (start 119.2500 87.0000) (end 106.0000 87.0000) (width 0.30) (layer "F.Cu") (net "/NRST"))
+  (segment (start 106.0000 87.0000) (end 105.7500 86.7500) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 105.7500 86.7500) (end 105.5000 86.7500) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 105.5000 86.7500) (end 105.2500 86.5000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 105.2500 86.5000) (end 105.0000 86.4200) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 148.3554 90.5429) (end 148.0000 90.5000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 148.0000 90.5000) (end 136.2500 90.5000) (width 0.30) (layer "F.Cu") (net "/NRST"))
+  (segment (start 136.2500 90.5000) (end 136.0000 90.7500) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 136.0000 90.7500) (end 135.7500 90.7500) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 135.7500 90.7500) (end 135.5000 91.0000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 135.5000 91.0000) (end 135.2500 91.0000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 135.2500 91.0000) (end 135.0000 91.2500) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 135.0000 91.2500) (end 134.7500 91.2500) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 134.7500 91.2500) (end 134.5000 91.5000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 134.5000 91.5000) (end 134.0000 91.5000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 134.0000 91.5000) (end 133.7500 91.7500) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 133.7500 91.7500) (end 133.5000 91.7500) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 133.5000 91.7500) (end 133.2500 92.0000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 133.2500 92.0000) (end 133.0000 92.0000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 133.0000 92.0000) (end 132.7500 92.2500) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 132.7500 92.2500) (end 132.5000 92.2500) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 132.5000 92.2500) (end 132.2500 92.5000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 132.2500 92.5000) (end 132.0000 92.5000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 132.0000 92.5000) (end 131.7500 92.7500) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 131.7500 92.7500) (end 131.2500 92.7500) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 131.2500 92.7500) (end 131.0000 93.0000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 131.0000 93.0000) (end 130.7500 93.0000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 130.7500 93.0000) (end 130.5000 93.2500) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 130.5000 93.2500) (end 130.2500 93.2500) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 130.2500 93.2500) (end 130.0000 93.5000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 130.0000 93.5000) (end 129.7500 93.5000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 129.7500 93.5000) (end 129.5000 93.7500) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 129.5000 93.7500) (end 129.2500 93.7500) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 129.2500 93.7500) (end 129.0000 94.0000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 129.0000 94.0000) (end 128.5000 94.0000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 128.5000 94.0000) (end 128.2500 94.2500) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 128.2500 94.2500) (end 128.0000 94.2500) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 128.0000 94.2500) (end 127.7500 94.5000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 127.7500 94.5000) (end 127.5000 94.5000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 127.5000 94.5000) (end 127.2500 94.7500) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 127.2500 94.7500) (end 127.0000 94.7500) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 127.0000 94.7500) (end 126.7500 95.0000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 126.7500 95.0000) (end 126.5000 95.0000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 126.5000 95.0000) (end 126.2500 95.2500) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 126.2500 95.2500) (end 125.7500 95.2500) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 125.7500 95.2500) (end 125.5000 95.5000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 125.5000 95.5000) (end 125.2500 95.5000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 125.2500 95.5000) (end 125.0000 95.7500) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 125.0000 95.7500) (end 124.7500 95.7500) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 124.7500 95.7500) (end 124.5000 96.0000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 124.5000 96.0000) (end 124.2500 96.0000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 124.2500 96.0000) (end 124.0000 96.2500) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 124.0000 96.2500) (end 123.7500 96.2500) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 123.7500 96.2500) (end 123.5000 96.5000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 123.5000 96.5000) (end 123.0000 96.5000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 123.0000 96.5000) (end 122.7500 96.7500) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 122.7500 96.7500) (end 122.5000 96.7500) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 122.5000 96.7500) (end 122.2500 97.0000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 122.2500 97.0000) (end 122.0000 97.0000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 122.0000 97.0000) (end 121.7500 97.2500) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 121.7500 97.2500) (end 121.5000 97.2500) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 121.5000 97.2500) (end 121.2500 97.5000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 121.2500 97.5000) (end 120.7500 97.5000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 120.7500 97.5000) (end 120.5000 97.7750) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 120.5000 97.7750) (end 120.2500 98.0000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 120.2500 98.0000) (end 120.0000 98.0000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 120.0000 98.0000) (end 119.2500 98.7500) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 119.2500 98.7500) (end 119.0000 98.7500) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 119.0000 98.7500) (end 118.7500 99.0000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 118.7500 99.0000) (end 118.2500 99.0000) (width 0.15) (layer "F.Cu") (net "/NRST"))
+  (segment (start 118.2500 99.0000) (end 117.9800 99.2500) (width 0.15) (layer "F.Cu") (net "/NRST"))
 )

@@ -232,37 +232,57 @@ def remove_old_nrst_segments(text):
 
 def astar(start, goal, footprints, ignored_pads):
     start_key = (
-        round(start[0] / GRID) * GRID,
-        round(start[1] / GRID) * GRID,
+        round(round(start[0] / GRID) * GRID, 6),
+        round(round(start[1] / GRID) * GRID, 6),
     )
     goal_key = (
-        round(goal[0] / GRID) * GRID,
-        round(goal[1] / GRID) * GRID,
+        round(round(goal[0] / GRID) * GRID, 6),
+        round(round(goal[1] / GRID) * GRID, 6),
     )
 
     directions = (
         (1, 0), (-1, 0), (0, 1), (0, -1),
         (1, 1), (1, -1), (-1, 1), (-1, -1),
     )
+    blocked_cells = set()
+    margin = CLEARANCE + W030 / 2.0
+    ignored_refs = {ref for ref, _pin in ignored_pads}
+    for footprint in footprints:
+        ref = footprint["ref"]
+        if ref in ignored_refs:
+            continue
+        for pin, pad_points in footprint["pads"].items():
+            if (ref, pin) in ignored_pads:
+                continue
+            for px, py in pad_points:
+                ix_min = int(math.floor((px - margin) / GRID))
+                ix_max = int(math.ceil((px + margin) / GRID))
+                iy_min = int(math.floor((py - margin) / GRID))
+                iy_max = int(math.ceil((py + margin) / GRID))
+                for ix in range(ix_min, ix_max + 1):
+                    for iy in range(iy_min, iy_max + 1):
+                        point = (round(ix * GRID, 6), round(iy * GRID, 6))
+                        if math.hypot(point[0] - px, point[1] - py) <= margin:
+                            blocked_cells.add(point)
+        for courtyard in footprint["courtyards"]:
+            if courtyard[0] == "rect":
+                _, x1, y1, x2, y2 = courtyard
+            else:
+                _, x1, y1, x2, y2 = courtyard[:5]
+            ix_min = int(math.floor((x1 - margin) / GRID))
+            ix_max = int(math.ceil((x2 + margin) / GRID))
+            iy_min = int(math.floor((y1 - margin) / GRID))
+            iy_max = int(math.ceil((y2 + margin) / GRID))
+            for ix in range(ix_min, ix_max + 1):
+                for iy in range(iy_min, iy_max + 1):
+                    blocked_cells.add((round(ix * GRID, 6), round(iy * GRID, 6)))
+
+    def blocked(point):
+        return point in blocked_cells
+
     open_nodes = [(0.0, start_key)]
     came_from = {}
     cost = {start_key: 0.0}
-
-    def blocked(point):
-        for footprint in footprints:
-            ref = footprint["ref"]
-            for pin, pad_points in footprint["pads"].items():
-                if (ref, pin) in ignored_pads:
-                    continue
-                if any(math.hypot(point[0] - px, point[1] - py) <= 0.55 for px, py in pad_points):
-                    return True
-            for courtyard in footprint["courtyards"]:
-                if courtyard[0] == "rect":
-                    _, x1, y1, x2, y2 = courtyard
-                    margin = CLEARANCE + W030 / 2.0
-                    if x1 - margin <= point[0] <= x2 + margin and y1 - margin <= point[1] <= y2 + margin:
-                        return True
-        return False
 
     while open_nodes:
         _, current = heapq.heappop(open_nodes)
@@ -272,12 +292,16 @@ def astar(start, goal, footprints, ignored_pads):
                 current = came_from[current]
                 path.append(current)
             path.reverse()
+            path[0] = (start[0], start[1])
+            path[-1] = (goal[0], goal[1])
             return [(point[0], point[1]) for point in path]
 
         cx, cy = current
         for dx, dy in directions:
-            neighbor = (round((cx + dx * GRID) / GRID) * GRID,
-                        round((cy + dy * GRID) / GRID) * GRID)
+            neighbor = (round(round((cx + dx * GRID) / GRID) * GRID, 6),
+                        round(round((cy + dy * GRID) / GRID) * GRID, 6))
+            if neighbor[0] < 95.0 or neighbor[0] > 165.0 or neighbor[1] < 55.0 or neighbor[1] > 120.0:
+                continue
             if blocked(neighbor) and neighbor != goal_key:
                 continue
             step = GRID if dx == 0 or dy == 0 else GRID * math.sqrt(2)
