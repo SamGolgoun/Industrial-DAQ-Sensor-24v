@@ -1,0 +1,28 @@
+** Drc report for stm32g4-canfd-sensor-node.kicad_pcb **
+** Created on 2026-11-26T02:17:47 **
+** Report includes: Errors, Warnings, Exclusions **
+
+** Found 0 DRC violations **
+
+** Found 2 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(131.5250 mm, 86.5000 mm): Pad 1 [/OSC_IN] of C18 on F.Cu
+    @(135.0625 mm, 87.7500 mm): Pad 5 [/OSC_IN] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(135.0625 mm, 87.7500 mm): Pad 5 [/OSC_IN] of U2 on F.Cu
+    @(137.4000 mm, 79.3500 mm): Pad 1 [/OSC_IN] of Y1 on F.Cu
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Silkscreen clearance
+    - Silkscreen clipped by solder mask
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **
